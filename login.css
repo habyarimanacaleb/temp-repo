@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(36, 153, 231, 0.7),rgb(187, 178, 178));
+ }
+ /* .account-container{
+    margin-top: 2rem;
+    padding: 1.5rem;
+ } */
+ .my-logo a{
+   color: white;
+   font-size: 30px;
+   text-decoration: none;
+ }
+ .sign-icon{
+   color: rgb(245, 0, 0);
+   font-size: 60px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+ }
+ .nav-bar{
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: black;
+ }
+ .port a{
+   color: white;
+   font-size: 20px;
+   text-decoration: none;
+ }
+ .port a:hover{
+   border: 1px solid gray;
+   padding: 8px;
+   border-radius: 10px;
+ }
+
+ .register-form{
+    margin-bottom: 2rem;
+    border: 1px solid rgb(0, 255, 255,0.75);
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 0.5rem gray ;
+    /* background-color: antiquewhite; */
+
+ }
+ 
+ .input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+ }
+ .input-form > input{
+    width: 50%;
+    padding: 10px;
+    margin-left: 8px;
+    background-color: transparent; 
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+ }
+ .input-form > label{
+    font-size: 30px;
+ }
+ #comment-section{
+      width: 55%;
+      height: 50px;
+      padding-left: 5px;
+  resize: none;
+  background-color: transparent;
+  color:wheat;
+ }
+ #submit{
+    justify-content: center;
+    display: flex;
+  margin-top: 20px;
+
+ }
+ #submit > button{
+    font-size: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 6px;
+    transition: 0.3s;
+    background-color: rgb(20, 174, 226,0.5);
+ }
+ #submit > button:hover{
+     background-color: rgb(20, 174, 226,0.9);
+ }
+ #submit > button:focus{
+    transform: translateY(0.1rem);
+ }
+ .back-to-home{
+ text-align: center;
+ }
+#back-home{
+   margin-top: 80px;
+ }
+ #back-home a{
+    text-decoration: none;
+    color: rgb(20, 127, 241);
+    border:2px solid rgb(111, 215, 250);
+    padding: 15px;
+    background-color: rgb(20, 174, 226,0.7);
+ }
+ #errorMessages{
+   text-align: center;
+   padding: 12px;
+ }

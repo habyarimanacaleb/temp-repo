@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <nav class="side-menu" id="side-menu">
+      <div class="toggle-button" id="toggle-close"><i></i></div>
+      <h1 class="my-logo">MY BRAND</h1>
+      <ul class="navigation-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/html/index.html">LogOut</a></li>
+      </ul>
+    </nav>
+    <main id="main">
+        <div class="main-nav">
+          <div id="toggle-btn" class="main-menu">
+            <i>≡</i>
+          </div>
+          <div class="input-box">
+            <input type="text" /><a href="https://www.google.com/"
+              ><button id="search">Search</button></a
+            >
+          </div>
+          <div class="input-box">
+            <a href="/html/register.html"><button>SIGNUP</button></a>
+          </div>
+        </div> 
+        <div id="home">
+        <div class="home  active">
+       <h1 id="welcome">Welcome To my page</h1>
+            <h1>My name is <span style="font-weight: bold; color: rgb(60, 209, 209); font-family: Georgia, 'Times New Roman', Times, serif;">Habyarimana Caleb </span></h1>
+            <h2>I'm <span style="color: brown;"> Web and Product Designer </span></h2>
+        </div>
+      </div> 
+
+      <div id="portfolio" >
+        <h1 style="text-align: left; margin-left: 20px; margin-bottom: 20px; font-size: 40px;"> Portfolio</h1>
+
+        <div class="portfolio">
+        <div class="project">
+        <img src="../image/laptop.png" id="project">
+        <p style="margin: 10px;">This item is designed in solidworks software and it's dimensions are supposed so for your design we can shape their size according to your specification .</p>
+      </div>
+        <div class="project">
+        <img src="../image/bearings.png" id="project">
+        <p style="margin: 10px;">This item is designed in solidworks software and it's dimensions are supposed so for your design we can shape their size according to your specification .</p>
+      </div>
+        <div class="project">
+        <img src="../image/calculator.png" id="project">
+        <p style="margin: 10px;">This item is designed in solidworks software and it's dimensions are supposed so for your design we can shape their size according to your specification .</p>
+      </div>
+        <div class="project">
+        <img src="../image/ui.jpeg" id="project">
+        <p style="margin: 10px;">This item is designed by showing how we can make your protype using different tools like FIGMA, CANVA, FRAMER and SOLIDWORKS also it can be used on some case and it's dimensions are supposed so for your designs, we can shape their size according to your specification .</p>
+      </div>
+    </div>
+      </div>
+
+      
+    </main>
+
+    <script>
+      const toggleBtn = document.getElementById("toggle-btn");
+      const sideMenu = document.getElementById("side-menu");
+      const toggleClose = document.getElementById('toggle-close');
+
+      toggleBtn.onclick = () => {
+        sideMenu.classList.toggle("active");
+        document.getElementById("main").style.marginLeft = "180px";
+      };
+      toggleClose.onclick = ()=>{
+        sideMenu.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
